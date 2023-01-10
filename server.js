@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 const port = 0
 
-require('child_process').fork('./server1.js')
+require('child_process').fork('./data/dataServer.js')
 
 app.use('/',express.static(path.join(__dirname,'angular')));
 
